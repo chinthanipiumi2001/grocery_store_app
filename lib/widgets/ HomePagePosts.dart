@@ -21,6 +21,13 @@ class HomePagePosts extends StatelessWidget{
         children: [
           Container(
             alignment: Alignment.centerLeft,
+            child: Text(
+                "Flash Sale",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ],
       ),
