@@ -38,6 +38,7 @@ class HomePagePosts extends StatelessWidget{
             mainAxisSpacing: 15,
             shrinkWrap: true,
             children: [
+              for(int i=1; i<9; i++)
               Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
@@ -81,6 +82,24 @@ class HomePagePosts extends StatelessWidget{
                           children: [
                             Text(
                               "\$50",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFFFFB608),
+                              ),
+                            ),
+                            SizedBox(height:5),
+                            Text(
+                              "/1KG",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                            Spacer(),
+                            Icon(
+                                Icons.favorite_border,
+                              color: Color(0xFFFFB608),
+                              size: 28,
                             ),
                           ],
                         ),

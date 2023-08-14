@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_store_app/widgets/%20HomePagePosts.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -39,16 +40,29 @@ class HomePage extends StatelessWidget{
               mainAxisSpacing: 15,
               shrinkWrap: true,
               children: [
+                for(int i=1; i<9; i++)
                 Container(
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 230, 177),
                     borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.3),
+                        spreadRadius: 1,
+                        blurRadius: 5,
+                      ),
+                    ],
+                  ),
+                  child: Image.asset(
+                    "images/$i.png",
+                    fit: BoxFit.cover,
                   ),
                 ),
               ],
             ),
           ),
+          HomePagePosts(),
         ],
       ),
     );
