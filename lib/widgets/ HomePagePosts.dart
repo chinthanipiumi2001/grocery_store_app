@@ -76,6 +76,14 @@ class HomePagePosts extends StatelessWidget{
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        SizedBox(height: 12),
+                        Row(
+                          children: [
+                            Text(
+                              "\$50",
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
