@@ -58,7 +58,7 @@ class HomePagePosts extends StatelessWidget{
                       //Navigator.pushNamed(context, "itemPage");
                     },
                     child: Image.asset(
-                      "images/1.png",
+                      "images/$i.png",
                       fit: BoxFit.contain,
                       height: 130,
                       width: 120,
