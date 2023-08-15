@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_store_app/widgets/%20HomePagePosts.dart';
+import 'package:grocery_store_app/widgets/HomeBottomBar.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -65,6 +66,7 @@ class HomePage extends StatelessWidget{
           HomePagePosts(),
         ],
       ),
+      bottomNavigationBar: HomeBottomBar(),
     );
   }
 }
