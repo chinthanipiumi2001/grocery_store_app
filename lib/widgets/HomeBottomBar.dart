@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeBottomBar extends StatelessWidget{
@@ -12,18 +13,78 @@ class HomeBottomBar extends StatelessWidget{
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
-              Icons.home,
-            color: Color(0xFFF7CA0F),
-            size: 32,
+          Column(
+            children: [
+              Icon(
+                Icons.home,
+                color: Color(0xFFF7CA0F),
+                size: 32,
+              ),
+              Text(
+                "Home",
+                style: TextStyle(
+                  color: Color(0xFFF7CA0F),
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
-          Text(
-            "Home",
-            style: TextStyle(
-              color: Color(0xFFF7CA0F),
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
+          Column(
+            children: [
+              Icon(
+                Icons.search,
+                color: Color(0xFFF7CA0F),
+                size: 32,
+              ),
+              Text(
+                "Explore",
+                style: TextStyle(
+                  color: Color(0xFFF7CA0F),
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          InkWell(
+            onTap: (){
+              //Navigator.pushNamed(context, "cartPage");
+            },
+            child: Column(
+              children: [
+                Icon(
+                  CupertinoIcons.cart,
+                  color: Color(0xFFF7CA0F),
+                  size: 32,
+                ),
+                Text(
+                  "My cart",
+                  style: TextStyle(
+                    color: Color(0xFFF7CA0F),
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
+          ),
+          Column(
+            children: [
+              Icon(
+                Icons.person,
+                color: Color(0xFFF7CA0F),
+                size: 32,
+              ),
+              Text(
+                "Account",
+                style: TextStyle(
+                  color: Color(0xFFF7CA0F),
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
         ],
       ),
