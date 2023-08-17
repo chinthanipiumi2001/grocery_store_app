@@ -48,7 +48,51 @@ class ItemPage extends StatelessWidget{
                     ],
                   ),
                 ),
-
+                Image.asset(
+                  "images/2.png",
+                  height: 280,
+                  width: 280,
+                  fit: BoxFit.contain,
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 15),
+          Container(
+            padding: EdgeInsets.all(15),
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  spreadRadius: 1,
+                  blurRadius: 5,
+                ),
+              ],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Item Name",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Column(
+                  children: [
+                    Text(
+                      "\$50",
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFFFFB608),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
