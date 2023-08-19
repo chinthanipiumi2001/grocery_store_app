@@ -91,10 +91,72 @@ class ItemPage extends StatelessWidget{
                         color: Color(0xFFFFB608),
                       ),
                     ),
+                    SizedBox(height: 5),
+                    Text(
+                      "400 gram",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
                   ],
                 ),
               ],
             ),
+          ),
+          SizedBox(height: 15),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 15,vertical: 8),
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  spreadRadius: 1,
+                  blurRadius: 5,
+                ),
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Product Details",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height:8),
+                Text(
+                  "This is the decription of the product."
+                      "This is the decription of the product"
+                      "This is the decription of the product"
+                      "This is the decription of the product",
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height:15),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                  padding:EdgeInsets.only(left: 20),
+                child: Text(
+                  "Only for you,",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
