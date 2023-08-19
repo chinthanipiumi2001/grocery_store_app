@@ -156,6 +156,36 @@ class ItemPage extends StatelessWidget{
                   ),
                 ),
               ),
+              SizedBox(height:5),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    for(int i=1;i<5;i++)
+                    Container(
+                      height: 90,
+                      width: 90,
+                      padding: EdgeInsets.all(5),
+                      margin: EdgeInsets.only(top: 8,bottom: 8,left: 20),
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 255, 230, 177),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 1,
+                            blurRadius: 8,
+                          ),
+                        ],
+                      ),
+                      child: Image.asset(
+                        "images/$i.png",
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ],
