@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_store_app/widgets/ItemBottomBar.dart';
 
 class ItemPage extends StatelessWidget{
   @override
@@ -161,7 +162,7 @@ class ItemPage extends StatelessWidget{
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    for(int i=1;i<5;i++)
+                    for(int i=1;i<9;i++)
                     Container(
                       height: 90,
                       width: 90,
@@ -190,6 +191,7 @@ class ItemPage extends StatelessWidget{
           ),
         ],
       ),
+      bottomNavigationBar: ItemBottomBar(),
     );
   }
 }
