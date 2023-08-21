@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_store_app/widgets/CartItemSamples.dart';
 
 class CartPage extends StatefulWidget{
   @override
@@ -64,14 +65,20 @@ class _CartPageState extends State<CartPage>{
                 activeColor:Color(0xFFFFB608),
                 title: Text(
                     "Select all items",
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
                 ),
                 value: checkValue,
                 onChanged: (newValue){
                   setState(() {
                     checkValue = newValue!;
                   });
-                }
+                },
+                controlAffinity: ListTileControlAffinity.leading,
               ),
+              Divider(height: 30,thickness: 1),
+              CartItemSamples(),
             ],),
           ),
         ],
