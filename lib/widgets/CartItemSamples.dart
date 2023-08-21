@@ -6,8 +6,25 @@ class CartItemSamples extends StatefulWidget{
 }
 
 class _CartItemSamplesState extends State<CartItemSamples>{
+  bool checkedValue = false;
   @override
   Widget build(BuildContext context){
-    return Container();
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 5,horizontal: 12),
+      child: Column(
+        children: [
+          Row(children: [
+            Checkbox(
+              activeColor: Color(0xFFFFB608),
+              value: checkedValue,
+              onChanged: (newValue){
+                setState(() {
+                  checkedValue = newValue!;
+                });
+              },
+            ),
+          ],),
+        ],),
+    );
   }
 }
