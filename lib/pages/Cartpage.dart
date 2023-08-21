@@ -5,6 +5,7 @@ class CartPage extends StatefulWidget{
   State<CartPage> createState() => _CartPageState();
 }
 class _CartPageState extends State<CartPage>{
+  bool checkValue = false;
   @override
   Widget build (BuildContext context){
     return Scaffold(
@@ -55,7 +56,24 @@ class _CartPageState extends State<CartPage>{
               ],
             ),
           ),
-          Container(),
+          Container(
+            padding: EdgeInsets.only(top: 10),
+            color: Colors.white,
+            child: Column(children: [
+              CheckboxListTile(
+                activeColor:Color(0xFFFFB608),
+                title: Text(
+                    "Select all items",
+                ),
+                value: checkValue,
+                onChanged: (newValue){
+                  setState(() {
+                    checkValue = newValue!;
+                  });
+                }
+              ),
+            ],),
+          ),
         ],
       ),
     );
