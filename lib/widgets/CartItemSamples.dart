@@ -24,7 +24,16 @@ class _CartItemSamplesState extends State<CartItemSamples>{
                 );
               },
             ),
-            Container(),
+            Container(
+              height: 70,
+              width: 70,
+              padding: EdgeInsets.all(5),
+              margin: EdgeInsets.only(left: 5),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(225, 225, 230, 177),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
           ],
           ),
         ],
