@@ -11,72 +11,20 @@ class _CartItemSamplesState extends State<CartItemSamples>{
   Widget build(BuildContext context){
     return Container(
       margin: EdgeInsets.symmetric(vertical: 5,horizontal: 12),
-      child: Row(
+      child: Column(
         children: [
-          Column(
-            children: [
-              Row(children: [
-                Checkbox(
-                  activeColor: Color(0xFFFFB608),
-                  value: checkedValue,
-                  onChanged: (newValue){
-                    setState(() {
-                      checkedValue = newValue!;
-                    });
-                  },
-                ),
-                Container(
-                  height: 70,
-                  width: 70,
-                  padding: EdgeInsets.all(5),
-                  margin: EdgeInsets.only(left: 5),
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(225, 225, 230, 177),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
-                        spreadRadius: 1,
-                        blurRadius: 8,
-                      ),
-                    ],
-                  ),
-                  child: Image.asset(
-                    "images/1.png",
-                    fit: BoxFit.contain,
-                  ),
-                ),
-                Padding(
-                    padding:EdgeInsets.symmetric(horizontal: 10),
-                  child: Column(
-                    children: [
-                      Text(
-                        "Item Name",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(162, 0, 0, 0),
-                        ),
-                      ),
-                      SizedBox(height:12),
-                      Row(
-                        children: [
-                          Text(
-                            "\$50",
-                            style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],),
-            ],),
-        ],
-      ),
+          Row(children: [
+            Checkbox(
+              activeColor: Color(0xFFFFB608),
+              value: checkedValue,
+              onChanged: (newValue){
+                setState(() {
+                  checkedValue = newValue!;
+                });
+              },
+            ),
+          ],),
+        ],),
     );
   }
 }
