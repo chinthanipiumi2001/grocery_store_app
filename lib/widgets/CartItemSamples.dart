@@ -59,6 +59,17 @@ class _CartItemSamplesState extends State<CartItemSamples>{
                         ),
                       ),
                       SizedBox(height:12),
+                      Row(
+                        children: [
+                          Text(
+                            "\$50",
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
