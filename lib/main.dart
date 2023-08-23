@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:grocery_store_app/pages/Cartpage.dart';
 import 'package:grocery_store_app/pages/HomePage.dart';
 import 'package:grocery_store_app/pages/ItemPage.dart';
 
@@ -28,6 +29,7 @@ class _MyAppState extends State<MyApp>{
       routes: {
         "/": (context) => HomePage(),
         "itemPage": (context) => ItemPage(),
+        "cartPage": (context) => CartPage(),
       },
     );
   }
