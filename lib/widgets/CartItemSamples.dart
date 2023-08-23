@@ -20,11 +20,15 @@ class _CartItemSamplesState extends State<CartItemSamples>{
               onChanged: (newValue){
                 setState(() {
                   checkedValue = newValue!;
-                });
+                }
+                );
               },
             ),
-          ],),
-        ],),
+            Container(),
+          ],
+          ),
+        ],
+      ),
     );
   }
 }
