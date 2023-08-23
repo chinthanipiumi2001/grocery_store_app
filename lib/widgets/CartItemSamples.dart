@@ -32,7 +32,19 @@ class _CartItemSamplesState extends State<CartItemSamples>{
               decoration: BoxDecoration(
                 color: Color.fromARGB(225, 225, 230, 177),
                 borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 1,
+                    blurRadius: 8,
+                  ),
+                ],
               ),
+              child: Image.asset(
+                  "Images/1.png",
+                fit: BoxFit.contain,
+              ),
+
             ),
           ],
           ),
