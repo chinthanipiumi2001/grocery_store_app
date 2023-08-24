@@ -41,10 +41,24 @@ class _CartItemSamplesState extends State<CartItemSamples>{
                 ],
               ),
               child: Image.asset(
-                  "Images/1.png",
+                  "images/1.png",
                 fit: BoxFit.contain,
               ),
-
+            ),
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                children: [
+                  Text(
+                    "Item Name",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
           ),
