@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_store_app/widgets/CartBottomBar.dart';
 import 'package:grocery_store_app/widgets/CartItemSamples.dart';
 
 class CartPage extends StatefulWidget{
@@ -81,8 +82,90 @@ class _CartPageState extends State<CartPage>{
               CartItemSamples(),
             ],),
           ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
+            padding: EdgeInsets.all(5),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.2),
+                  spreadRadius: 1,
+                  blurRadius: 5,
+                ),
+              ],
+            ),
+            child: Column(children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Sub-Total:",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                  Text(
+                    "\$100",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                ],
+              ),
+              Divider(height:20,thickness:1),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Delivery Fee:",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                  Text(
+                    "\$20",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Discount:",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                  Text(
+                    "\$10",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(162, 0, 0, 0),
+                    ),
+                  ),
+                ],
+              ),
+            ],),
+          )
         ],
       ),
+      bottomNavigationBar: CartBottomBar(),
     );
   }
 }
