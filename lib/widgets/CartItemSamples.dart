@@ -57,8 +57,41 @@ class _CartItemSamplesState extends State<CartItemSamples>{
                       color: Color.fromARGB(162, 0, 0, 0),
                     ),
                   ),
+                  SizedBox(height:12),
+                  Row(
+                    children: [
+                      Text(
+                        "\$50",
+                        style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFFFFB608),
+                        ),
+                      ),
+                      SizedBox(width: 5),
+                      Text(
+                        "/5KG",
+                        style: TextStyle(
+                            fontSize: 15,
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
+            ),
+            Spacer(
+
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(
+                  Icons.delete,
+                  color: Colors.redAccent,
+                ),
+              ],
             ),
           ],
           ),
