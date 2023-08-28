@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:grocery_store_app/pages/Cartpage.dart';
 import 'package:grocery_store_app/pages/HomePage.dart';
 import 'package:grocery_store_app/pages/ItemPage.dart';
+import 'package:grocery_store_app/pages/OrderPage.dart';
 
 void main() {
   runApp( MyApp());
@@ -30,6 +31,7 @@ class _MyAppState extends State<MyApp>{
         "/": (context) => HomePage(),
         "itemPage": (context) => ItemPage(),
         "cartPage": (context) => CartPage(),
+        "orderPage": (context) => OrderPage(),
       },
     );
   }
