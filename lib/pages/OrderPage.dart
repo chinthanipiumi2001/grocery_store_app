@@ -19,6 +19,23 @@ class OrderPage extends StatelessWidget{
               ),
             ),
           ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 15,top: 20),
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Fill Order Detail",
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Color.fromARGB(162, 0, 0, 0),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
